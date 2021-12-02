@@ -10,13 +10,13 @@
           <v-tab-item>
             <v-card outlined>
               <v-card-text>
-                <v-row justify="center">
-                <v-form>
-                 <v-row align="center">
-                      <v-col cols="12" md="4">
+                <v-row >
+                <v-form class="pa-5 mx-auto" style="max-width: 35rem">
+                 <v-row >
+                      <v-col cols="12" md="6">
                         <p class="label">Name</p>
                       </v-col>
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -30,11 +30,11 @@
                     </v-row>
                     <v-row>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">E-mail</p>
                       </v-col>
 
-                      <v-col cols="12" md="2" class="d-flex flex-wrap">
+                      <v-col cols="12" md="6" class="d-flex flex-wrap">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -45,13 +45,13 @@
                         />
                       </v-col>
                     </v-row>
-                    <v-row align="center"
-                      ><v-col cols="12" md="4">
+                    <v-row 
+                      ><v-col cols="12" md="6">
                         <p class="label">
                           Mobile
                         </p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -64,10 +64,10 @@
                      
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Education Qualification</p></v-col
                       >
-                      <v-col cols="12" md="2" class="d-flex flex-wrap">
+                      <v-col cols="12" md="6" class="d-flex flex-wrap">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -79,10 +79,10 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Total Work Experience</p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -94,10 +94,10 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Vintage in Organisation</p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -109,10 +109,10 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Has Understanding of MIS</p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -124,10 +124,10 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Has good communication skills</p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -139,10 +139,10 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Has familiarity with tachnology esp. MS office,zoom,etc</p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -155,10 +155,10 @@
                     </v-row>
                     <v-row>
                        
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <p class="label">Has the ability to deal with stakeholder, get approval/take decision and influence others in the organisation to adopt the project improvements</p></v-col
                       >
-                      <v-col cols="12" md="2">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -173,7 +173,7 @@
                 <!--
                 <v-form v-model="valid">
                   <v-row>
-                    <v-col cols="12" md="12">
+                    <v-col cols="12" md="62">
                       <v-simple-table>
                         <template v-slot:default>
                           <thead>
@@ -183,7 +183,7 @@
                             <template v-for="item in details5">
                               <tr
                                 :key="item.name"
-                                v-if="$vuetify.breakpoint.mdAndUp"
+                                v-if="$vuetify.breakpoint.mdAn6Up"
                               >
                                 <td>{{ item.name }}</td>
                                 <td>
@@ -219,12 +219,12 @@
                     </v-col>
                   </v-row>
                 </v-form>-->
-                <v-row align="center" justify="center">
+                <v-row  justify="center">
                   <div class="d-flex">
                     <div class="d-inline-flex flex-wrap ma-3">
                       <div class="d-flex mt-5 mr-3">
                         <v-btn large rounded color="primary" to="engagement-info?s=1">
-                          <v-icon left>mdi-arrow-left</v-icon>
+                          <v-icon left>mdi-6rrow-left</v-icon>
                           Back
                         </v-btn>
                       </div>
@@ -248,14 +248,14 @@
                           @click="tab++"
                         >
                           Save And Continue<v-icon right
-                            >mdi-arrow-right</v-icon
+                            >mdi-6rrow-right</v-icon
                           >
                         </v-btn>
                       </div>
                       <div class="d-flex mt-5">
                         <v-btn large rounded color="primary" to="/agreement?s=1">
                           Agreement
-                          <v-icon right>mdi-arrow-right</v-icon>
+                          <v-icon right>mdi-6rrow-right</v-icon>
                         </v-btn>
                       </div>
                     </div>

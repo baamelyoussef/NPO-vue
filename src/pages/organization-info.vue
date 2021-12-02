@@ -17,7 +17,7 @@
                     <v-form
                       v-model="valid"
                       class="mx-auto"
-                      style="max-width: 28rem"
+                      style="max-width: 35rem"
                     >
                       <v-row class="mt-5">
                         <v-col cols="12" md="6">
@@ -505,7 +505,7 @@
                       class="mx-auto pa-3"
                       :style="
                         $vuetify.breakpoint.mdAndUp
-                          ? 'max-width: 28rem'
+                          ? 'max-width: 35rem'
                           : 'width: 100%'
                       "
                     >

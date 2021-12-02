@@ -13,7 +13,7 @@
                 <v-card-text>
                   <v-form v-model="valid">
                     <v-row align="center" justify="center">
-                      <p>Digital Signature Pad</p>
+                      <p>Digital Signature</p>
                     </v-row>
                     <v-card
                       outlined

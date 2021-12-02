@@ -13,7 +13,7 @@
                 <v-form
                   v-model="valid"
                   class="pa-5 mx-auto"
-                  style="max-width: 28rem"
+                  style="max-width: 35rem"
                 >
                   <v-row>
                     <v-row>
