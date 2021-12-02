@@ -18,7 +18,7 @@
                       <v-col cols="12" md="4">
                         <p class="label">Reason for partnering with GSIF</p>
                       </v-col>
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         <v-textarea
                           rows="3"
                           no-resize
@@ -31,12 +31,14 @@
                           @change="sameasabove1"
                         />
                       </v-col>
-
+                      
+                    </v-row>
+                    <v-row>
                       <v-col cols="12" md="4">
                         <p class="label">What are the key challenges you are facing with the current MIS process</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -49,62 +51,13 @@
                         />
                       </v-col>
 
+                    </v-row>
+                    <v-row>
                       <v-col cols="12" md="4">
                         <p class="label">Why is transforming MIS important for your program</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-
-                      <v-col cols="12" md="4">
-                        <p class="label">How will this project have an impact on end beneficiaries</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="8">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-
-                      <v-col cols="12" md="4">
-                        <p class="label">No of MIS resources in the organisation (mention full time, part time, shared)</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="8">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-
-                      <v-col cols="12" md="4">
-                        <p class="label">No of different Programs, Projects run by the Organisation</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -117,8 +70,60 @@
                         />
                       </v-col>
                     </v-row>
-                    
-                    
+                    <v-row>
+                      <v-col cols="12" md="4">
+                        <p class="label">How will this project have an impact on end beneficiaries</p>
+                      </v-col>
+                      
+                      <v-col cols="12" md="3">
+                        
+                        <v-textarea
+                          rows="3"
+                          no-resize
+                           counter="300"
+                          dense
+                          hide-details="auto"
+                          v-model="legname"
+                          outlined
+                        />
+                      </v-col>
+                    </v-row>
+                    <v-row>
+                      <v-col cols="12" md="4">
+                        <p class="label">No of MIS resources in the organisation (mention full time, part time, shared)</p>
+                      </v-col>
+                      
+                      <v-col cols="12" md="3">
+                        
+                        <v-textarea
+                          rows="3"
+                          no-resize
+                           counter="300"
+                          dense
+                          hide-details="auto"
+                          v-model="legname"
+                          outlined
+                        />
+                      </v-col>  
+                    </v-row>
+                    <v-row>
+                       <v-col cols="12" md="4">
+                        <p class="label">No of different Programs, Projects run by the Organisation</p>
+                      </v-col>
+                      
+                      <v-col cols="12" md="3">
+                        
+                        <v-textarea
+                          rows="3"
+                          no-resize
+                           counter="300"
+                          dense
+                          hide-details="auto"
+                          v-model="legname"
+                          outlined
+                        />
+                      </v-col>
+                    </v-row>
                     <v-col cols="12" md="12">
                       <v-row align="left" class="my-2 ml-2 mr-1" justify="left" >
                         <p class="mb-6 mx-1 text-black-800 text-opacity-100 t">
@@ -133,7 +138,7 @@
                       <v-col cols="12" md="4">
                         <p class="label">Program/Project Name</p>
                       </v-col>
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         <v-textarea
                           rows="3"
                           no-resize
@@ -147,12 +152,16 @@
                           @change="sameasabove1"
                         />
                       </v-col>
+                     
+                     
+                    </v-row>
+                     <v-row>
 
                       <v-col cols="12" md="4">
                         <p class="label">Program/Project Budget</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -164,12 +173,13 @@
                           outlined
                         />
                       </v-col>
-
-                      <v-col cols="12" md="4">
+                     </v-row>
+                      <v-row>
+                        <v-col cols="12" md="4">
                         <p class="label">Program/Project Start and End Date</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -181,12 +191,13 @@
                           outlined
                         />
                       </v-col>
-
-                      <v-col cols="12" md="4">
+                      </v-row>
+                      <v-row>
+                         <v-col cols="12" md="4">
                         <p class="label">Overview of the program</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -198,12 +209,13 @@
                           outlined
                         />
                       </v-col>
-
-                      <v-col cols="12" md="4">
+                      </v-row>
+                      <v-row>
+                         <v-col cols="12" md="4">
                         <p class="label">Key Impact indicators of the program/Project</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -215,12 +227,14 @@
                           outlined
                         />
                       </v-col>
-
+                      </v-row>
+                      <v-row>
+                           
                       <v-col cols="12" md="4">
                         <p class="label">End Beneficiary</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -232,7 +246,8 @@
                           outlined
                         />
                       </v-col>
-                    </v-row>
+                      </v-row>
+
                     </v-col>
                   </v-row>
                   <v-row>
@@ -463,7 +478,7 @@
                       <v-col cols="12" md="4">
                         <p class="label">What is the support you need from GSIF for MIS re-engineering</p>
                       </v-col>
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         <v-textarea
                           rows="3"
                           no-resize
@@ -477,12 +492,15 @@
                           @change="sameasabove1"
                         />
                       </v-col>
+                
+                    </v-row>
+                    <v-row>
 
                       <v-col cols="12" md="4">
                         <p class="label">What is your automation requirement for excel based solutions, if any</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -495,11 +513,13 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" md="4">
                         <p class="label">What are the success indicators of GSIF project</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -511,12 +531,14 @@
                           outlined
                         />
                       </v-col>
+                    </v-row>
+                    <v-row>
 
                       <v-col cols="12" md="4">
                         <p class="label">Mention the key risks for achieving the planned outcomes and impacts of the GSIF project and how do these factors affect the project</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -528,12 +550,13 @@
                           outlined
                         />
                       </v-col>
-
-                      <v-col cols="12" md="4">
+                    </v-row>
+                    <v-row>
+                       <v-col cols="12" md="4">
                         <p class="label">What are the things that can be done/ planned to minimize or mitigate the impact of above-mentioned risk factors</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"
@@ -545,12 +568,13 @@
                           outlined
                         />
                       </v-col>
-
+                    </v-row>
+                    <v-row>
                       <v-col cols="12" md="4">
                         <p class="label">How do you plan to sustain the MIS solution designed by GSIF (licence cost,maintenance,enhancement,resources,etc)</p>
                       </v-col>
                       
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="3">
                         
                         <v-textarea
                           rows="3"

@@ -10,15 +10,16 @@
             <v-tab>Page 2</v-tab>
 
             <!-- step #1 -->
-            <v-tab-item>
+            <v-tab-item dense>
               <v-card outlined>
                 <v-card-text>
-                  <v-form v-model="valid">
-                    <v-row align="center">
+                  <v-row justify="center" class="mx-1">
+                  <v-form v-model="valid" >
+                    <v-row align="center" class="mt-5">
                       <v-col cols="12" md="4">
                         <p class="label">Name of the Organization</p>
                       </v-col>
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -28,12 +29,14 @@
                           @change="sameasabove1"
                         />
                       </v-col>
-
+                      
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">Legal Name</p>
                       </v-col>
 
-                      <v-col cols="12" md="8" class="d-flex flex-wrap">
+                      <v-col cols="12" md="4" class="d-flex flex-wrap">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -52,13 +55,13 @@
                         ></v-checkbox>
                       </v-col>
                     </v-row>
-                    <v-row align="center"
-                      ><v-col cols="12" md="4">
+                    <v-row align="center">
+                      <v-col cols="12" md="4">
                         <p class="label">
                           Regd Adress with state and pin code
-                        </p></v-col
-                      >
-                      <v-col cols="12" md="8">
+                        </p>
+                      </v-col>
+                      <v-col cols="12" md="4">
                         <v-textarea
                           dense
                           hide-details="auto"
@@ -71,10 +74,15 @@
                           required
                         />
                       </v-col>
+                      <!---->
+                      
+                      <!---->
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">HO Address</p></v-col
                       >
-                      <v-col cols="12" md="8" class="d-flex flex-wrap">
+                      <v-col cols="12" md="4" class="d-flex flex-wrap">
                         <v-textarea
                           dense
                           hide-details="auto"
@@ -95,10 +103,13 @@
                           class="ma-2"
                         ></v-checkbox>
                       </v-col>
+                    </v-row>
+
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">Website</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -108,11 +119,11 @@
                         />
                       </v-col>
                     </v-row>
-                    <v-row align="center"
+                    <v-row align="center" 
                       ><v-col cols="12" md="4">
                         <p class="label">Registered Legal Entity</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-select
                           multiple
                           dense
@@ -123,10 +134,14 @@
                           hide-details="auto"
                         ></v-select>
                       </v-col>
+                    
+                      
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">PAN Number</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -134,12 +149,14 @@
                           outlined
                         />
                       </v-col>
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">
                           Registration Certificate Number
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -153,7 +170,7 @@
                       <v-col cols="12" md="4">
                         <p class="label">80G Number</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -162,11 +179,14 @@
                           required
                         />
                       </v-col>
+                    
+                    </v-row>
+                    <v-row align="center">
 
                       <v-col cols="12" md="4">
                         <p class="label">12A Number</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -174,11 +194,12 @@
                           outlined
                         />
                       </v-col>
-
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">FCRA Number (if applicable)</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -194,7 +215,7 @@
                           Renewed 80G,12A,FCRA per the new guidelines?
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-radio-group v-model="radioGroup" row>
                           <v-radio
                             label="Yes"
@@ -208,14 +229,15 @@
                           ></v-radio>
                         </v-radio-group>
                       </v-col>
-
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">
                           Availability of Audited Financial statements for
                           previous 3 years?
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-radio-group v-model="radioGroup2" row>
                           <v-radio
                             label="Yes"
@@ -229,13 +251,15 @@
                           ></v-radio>
                         </v-radio-group>
                       </v-col>
-                      <v-col cols="12" md="4">
+                    </v-row>
+                    <v-row align="center">
+                        <v-col cols="12" md="4">
                         <p class="label">
                           Compliant with Income Tax Return filing for previous 3
                           years?
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-radio-group v-model="radioGroup3" row>
                           <v-radio
                             label="Yes"
@@ -254,7 +278,7 @@
                       <v-col cols="12" md="4">
                         <p class="label">Select the domain</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-select
                           multiple
                           dense
@@ -265,11 +289,14 @@
                           hide-details="auto"
                         ></v-select>
                       </v-col>
+                      
+                    </v-row>
+                    <v-row align="center">
 
                       <v-col cols="12" md="4">
                         <p class="label">Organization Accredited by</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-select
                           multiple
                           dense
@@ -281,13 +308,15 @@
                         ></v-select>
                       </v-col>
 
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="12" md="4">
                         <p class="label">
                           Any litigation history against the organization ? If
                           yes, please provide details
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-radio-group v-model="radioGroup4" row>
                           <v-radio
                             label="Yes"
@@ -300,7 +329,7 @@
                             value="No"
                           ></v-radio>
                         </v-radio-group>
-                        <v-textarea
+  4                     <v-textarea
                           v-if="radioGroup4 === 'Yes'"
                           label="Details here"
                           auto-grow
@@ -311,13 +340,13 @@
                       </v-col>
                     </v-row>
                     <v-row class="d-none d-md-flex pt-4">
-                      <v-col cols="4" md="4">
+                      <v-col cols="4" md="">
                         <p class="label">
                           Details of NPO Person filling the form :
                         </p>
                       </v-col>
 
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <p class="mb-2 secondary--text ml-10 d-md-none">
                           Details of NPO Person filling the form :
                         </p>
@@ -350,11 +379,13 @@
                           prepend-icon="mdi-cellphone"
                         ></v-text-field>
                       </v-col>
+                    </v-row>
+                    <v-row align="center">
                       <v-col cols="4" md="4">
                         <p class="label">Details of NPO Champion :</p>
                       </v-col>
 
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <p class="mb-2 secondary--text ml-10 d-md-none">
                           Details of NPO Champion :
                         </p>
@@ -387,10 +418,12 @@
                           prepend-icon="mdi-cellphone"
                         ></v-text-field>
                       </v-col>
-                      <v-col cols="4" md="4">
-                        <p class="label">Details of NPO CEO/ED/Funder</p>
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="4" md="">
+                        <p class="label">Details of NPO CEO/ED/Founder</p>
                       </v-col>
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="4">
                         <v-text-field
                           class="mx-2"
                           label="Name"
@@ -422,8 +455,9 @@
                       </v-col>
                     </v-row>
                   </v-form>
-                  <v-row align="center" justify="center">
-                    <div class="d-flex">
+                  </v-row>
+                  <v-row align="center"  justify="center">
+                    <div class="d-flex mt-2 mb-3">
                       <div class="d-inline-flex flex-wrap ma-3">
                         <div class="d-flex mt-5 mr-3">
                           <v-btn
@@ -464,18 +498,19 @@
 
             <!-- step #2 -->
             <v-tab-item>
-              <v-card outlined>
-                <v-card-text>
+              <v-card outlined class="fill-width">
+                <v-card-text class="fill-width">
+                  <v-row justify="center" class="fill-width">
                   <v-form v-model="valid">
-                    <v-row>
-                      <v-col cols="12" md="4">
+                    <v-row align="center">
+                      <v-col cols="12" md="3">
                         <p class="label">
                           Explain organization's origin,purpose and core
                           activities. What is the social problem you are
                           addressing
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="2">
                         <v-textarea
                           no-resize
                           counter="300"
@@ -483,14 +518,15 @@
                           rows="3"
                         ></v-textarea>
                       </v-col>
-
-                      <v-col cols="12" md="4">
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="12" md="3">
                         <p class="label">
                           Who are the direct and indirect beneficiaries of the
                           organisation
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="2">
                         <v-textarea
                           no-resize
                           counter="300"
@@ -498,14 +534,15 @@
                           rows="3"
                         ></v-textarea>
                       </v-col>
-
-                      <v-col cols="12" md="4">
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="12" md="3">
                         <p class="label">
                           What are the key qualitative impact indicators
                           measured
                         </p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="2">
                         <v-textarea
                           no-resize
                           counter="300"
@@ -514,11 +551,11 @@
                         ></v-textarea>
                       </v-col>
                     </v-row>
-                    <v-row>
-                      <v-col cols="12" md="4">
+                    <v-row align="center">
+                      <v-col cols="12" md="3">
                         <p class="label">Mention the SDG's impacted</p></v-col
                       >
-                      <v-col cols="12" md="8">
+                      <v-col cols="12" md="2">
                         <v-textarea
                           no-resize
                           counter="300"
@@ -527,8 +564,8 @@
                         ></v-textarea>
                       </v-col>
                     </v-row>
-                    <v-row>
-                      <v-col cols="12" md="12">
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row
                           align="left"
                           class="my-2 ml-2 mr-1"
@@ -602,9 +639,10 @@
                             </tbody>
                           </template>
                         </v-simple-table>
-                      </v-col>
-
-                      <v-col cols="12" md="12">
+                      </v-col>       
+                    </v-row>
+                    <v-row align="center">
+                       <v-col cols="12" md="6">
                         <v-row
                           align="left"
                           class="my-2 ml-2 mr-1"
@@ -658,7 +696,9 @@
                         </v-simple-table>
                       </v-col>
 
-                      <v-col cols="12" md="12">
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row
                           align="left"
                           class="my-2 ml-2 mr-1"
@@ -704,8 +744,8 @@
                         </v-simple-table>
                       </v-col>
                     </v-row>
-                    <v-row>
-                      <v-col cols="12" md="12">
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row
                           align="left"
                           class="my-2 ml-2 mr-1"
@@ -782,7 +822,19 @@
                         </v-simple-table>
                       </v-col>
 
-                      <v-col cols="12" md="12">
+                      
+                      <!-- <v-row align="center"  justify="center" class="my-2">
+                          <v-btn  class="primary" @click="details69.push({ name:'nahenahe'})"
+                                dark
+                                rounded>
+                            <v-icon left> mdi-plus </v-icon>
+                            Add New Row
+                        </v-btn>
+                        </v-row> -->
+                      
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row
                           align="left"
                           class="my-2 ml-2 mr-1"
@@ -834,15 +886,9 @@
                           </template>
                         </v-simple-table>
                       </v-col>
-                      <!-- <v-row align="center" justify="center" class="my-2">
-                          <v-btn  class="primary" @click="details69.push({ name:'nahenahe'})"
-                                dark
-                                rounded>
-                            <v-icon left> mdi-plus </v-icon>
-                            Add New Row
-                        </v-btn>
-                        </v-row> -->
-                      <v-col cols="12" md="12">
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row
                           align="left"
                           class="my-2 ml-2 mr-1"
@@ -887,8 +933,8 @@
                         </v-simple-table>
                       </v-col>
                     </v-row>
-                    <v-row>
-                      <v-col cols="12" md="12">
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row align="left" class="my-2 mr-1" justify="left">
                           <p class="mb-6 mx-2 text-black t">
                             Organisational Risk Details
@@ -928,8 +974,9 @@
                           </template>
                         </v-simple-table>
                       </v-col>
-
-                      <v-col cols="12" md="12">
+                    </v-row>
+                    <v-row align="center">
+                      <v-col cols="12" md="6">
                         <v-row align="left" class="my-2 mr-1" justify="left">
                           <p class="mb-6 mx-2 text-black t">
                             Organisational IT infrastructure availability
@@ -969,7 +1016,8 @@
                       </v-col>
                     </v-row>
                   </v-form>
-                  <v-row align="center" justify="center">
+                  </v-row>
+                  <v-row align="center"  justify="center">
                     <div class="d-flex">
                       <div class="d-inline-flex flex-wrap ma-3">
                         <div class="d-flex mt-5 mr-3">
