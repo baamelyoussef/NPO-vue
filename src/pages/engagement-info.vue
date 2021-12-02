@@ -6,23 +6,25 @@
     <v-card>
       <v-card-text>
         <v-tabs show-arrows v-model="tab" fixed-tabs>
-          
-
           <!-- step #1 -->
           <v-tab-item>
             <v-card outlined>
               <v-card-text>
-                <v-form v-model="valid">
+                <v-form
+                  v-model="valid"
+                  class="pa-5 mx-auto"
+                  style="max-width: 28rem"
+                >
                   <v-row>
-                    <v-row align="center" class="ma-1">
-                      <v-col cols="12" md="4">
+                    <v-row>
+                      <v-col cols="12" md="6">
                         <p class="label">Reason for partnering with GSIF</p>
                       </v-col>
-                      <v-col cols="12" md="3">
+                      <v-col cols="12" md="6">
                         <v-textarea
                           rows="3"
                           no-resize
-                           counter="300"
+                          counter="300"
                           dense
                           hide-details="auto"
                           v-model="orgname"
@@ -31,38 +33,20 @@
                           @change="sameasabove1"
                         />
                       </v-col>
-                      
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
-                        <p class="label">What are the key challenges you are facing with the current MIS process</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
+                      <v-col cols="12" md="6">
+                        <p class="label">
+                          What are the key challenges you are facing with the
+                          current MIS process
+                        </p>
                       </v-col>
 
-                    </v-row>
-                    <v-row>
-                      <v-col cols="12" md="4">
-                        <p class="label">Why is transforming MIS important for your program</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
+                      <v-col cols="12" md="6">
                         <v-textarea
                           rows="3"
                           no-resize
-                           counter="300"
+                          counter="300"
                           dense
                           hide-details="auto"
                           v-model="legname"
@@ -71,16 +55,17 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
-                        <p class="label">How will this project have an impact on end beneficiaries</p>
+                      <v-col cols="12" md="6">
+                        <p class="label">
+                          Why is transforming MIS important for your program
+                        </p>
                       </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
+
+                      <v-col cols="12" md="6">
                         <v-textarea
                           rows="3"
                           no-resize
-                           counter="300"
+                          counter="300"
                           dense
                           hide-details="auto"
                           v-model="legname"
@@ -89,34 +74,38 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
-                        <p class="label">No of MIS resources in the organisation (mention full time, part time, shared)</p>
+                      <v-col cols="12" md="6">
+                        <p class="label">
+                          How will this project have an impact on end
+                          beneficiaries
+                        </p>
                       </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
+
+                      <v-col cols="12" md="6">
                         <v-textarea
                           rows="3"
                           no-resize
-                           counter="300"
+                          counter="300"
                           dense
                           hide-details="auto"
                           v-model="legname"
                           outlined
                         />
-                      </v-col>  
+                      </v-col>
                     </v-row>
                     <v-row>
-                       <v-col cols="12" md="4">
-                        <p class="label">No of different Programs, Projects run by the Organisation</p>
+                      <v-col cols="12" md="6">
+                        <p class="label">
+                          No of MIS resources in the organisation (mention full
+                          time, part time, shared)
+                        </p>
                       </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
+
+                      <v-col cols="12" md="6">
                         <v-textarea
                           rows="3"
                           no-resize
-                           counter="300"
+                          counter="300"
                           dense
                           hide-details="auto"
                           v-model="legname"
@@ -124,9 +113,29 @@
                         />
                       </v-col>
                     </v-row>
-                    <v-col cols="12" md="12">
-                      <v-row align="left" class="my-2 ml-2 mr-1" justify="left" >
-                        <p class="mb-6 mx-1 text-black-800 text-opacity-100 t">
+                    <v-row>
+                      <v-col cols="12" md="6">
+                        <p class="label">
+                          No of different Programs, Projects run by the
+                          Organisation
+                        </p>
+                      </v-col>
+
+                      <v-col cols="12" md="6">
+                        <v-textarea
+                          rows="3"
+                          no-resize
+                          counter="300"
+                          dense
+                          hide-details="auto"
+                          v-model="legname"
+                          outlined
+                        />
+                      </v-col>
+                    </v-row>
+                    <v-col cols="12" class="pa-0">
+                      <v-row class="my-2">
+                        <p class="mb-6 mx-4 text-black-800 text-opacity-100 t">
                           Please provide the details of the program or
                           intervention or project where MIS restructuring is
                           needed. <br />
@@ -134,125 +143,119 @@
                           to 1 core program
                         </p>
                       </v-row>
-                      <v-row align="center" class="ma-1">
-                      <v-col cols="12" md="4">
-                        <p class="label">Program/Project Name</p>
-                      </v-col>
-                      <v-col cols="12" md="3">
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="orgname"
-                          outlined
-                          value="project 1"
-                          required
-                          @change="sameasabove1"
-                        />
-                      </v-col>
-                     
-                     
-                    </v-row>
-                     <v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">Program/Project Name</p>
+                        </v-col>
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="orgname"
+                            outlined
+                            value="project 1"
+                            required
+                            @change="sameasabove1"
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">Program/Project Budget</p>
+                        </v-col>
 
-                      <v-col cols="12" md="4">
-                        <p class="label">Program/Project Budget</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                     </v-row>
-                      <v-row>
-                        <v-col cols="12" md="4">
-                        <p class="label">Program/Project Start and End Date</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
                       </v-row>
                       <v-row>
-                         <v-col cols="12" md="4">
-                        <p class="label">Overview of the program</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                      </v-row>
-                      <v-row>
-                         <v-col cols="12" md="4">
-                        <p class="label">Key Impact indicators of the program/Project</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                      </v-row>
-                      <v-row>
-                           
-                      <v-col cols="12" md="4">
-                        <p class="label">End Beneficiary</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                      </v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            Program/Project Start and End Date
+                          </p>
+                        </v-col>
 
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">Overview of the program</p>
+                        </v-col>
+
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            Key Impact indicators of the program/Project
+                          </p>
+                        </v-col>
+
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">End Beneficiary</p>
+                        </v-col>
+
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
                     </v-col>
                   </v-row>
                   <v-row>
                     <v-col cols="12" md="12">
-                      <v-row align="left" class="my-2 ml-2 mr-1" justify="left" >
+                      <v-row align="left" class="my-2 ml-2 mr-1" justify="left">
                         <p class="mb-6 mx-1 text-black-800 text-opacity-100 t">
                           Program total beneficary impact details
                         </p>
@@ -278,7 +281,6 @@
                                   filled
                                   dense
                                   no-resize
-                                   
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -290,7 +292,6 @@
                                   filled
                                   dense
                                   no-resize
-                                   
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -302,7 +303,6 @@
                                   filled
                                   dense
                                   no-resize
-                                   
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -314,7 +314,6 @@
                                   filled
                                   dense
                                   no-resize
-                                 
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -326,7 +325,6 @@
                                   filled
                                   dense
                                   no-resize
-                                  
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -338,7 +336,6 @@
                                   filled
                                   dense
                                   no-resize
-                                
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -350,7 +347,6 @@
                                   filled
                                   dense
                                   no-resize
-                                  
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -364,7 +360,7 @@
 
                     <v-col cols="12" md="12">
                       <v-row align="left" class="my-2 ml-2 mr-1" justify="left">
-                        <p class="mb-6 mx-1 text-black-800 t" >
+                        <p class="mb-6 mx-1 text-black-800 t">
                           Explain the MIS process(as per questions in table
                           below)
                         </p>
@@ -393,7 +389,6 @@
                                   filled
                                   dense
                                   no-resize
-                                   
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -405,7 +400,6 @@
                                   filled
                                   dense
                                   no-resize
-                                   
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -417,7 +411,6 @@
                                   filled
                                   dense
                                   no-resize
-                                  
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -429,7 +422,6 @@
                                   filled
                                   dense
                                   no-resize
-                                  
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -441,7 +433,6 @@
                                   filled
                                   dense
                                   no-resize
-                                  
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -453,7 +444,6 @@
                                   filled
                                   dense
                                   no-resize
-                                   
                                   outlined
                                   rows="1"
                                   row-height="10"
@@ -463,138 +453,156 @@
                           </tbody>
                         </template>
                       </v-simple-table>
-                      <v-row align="center" justify="center" class="my-2">
-                        <v-btn  class="primary" @click="details3.push({ name:'new category'})"
-                                dark
-                                rounded>
-                            <v-icon left> mdi-plus </v-icon>
-                            Add New Row
+                      <v-row justify="center" class="my-2">
+                        <v-btn
+                          class="primary"
+                          @click="details3.push({ name: 'new category' })"
+                          dark
+                          rounded
+                        >
+                          <v-icon left> mdi-plus </v-icon>
+                          Add New Row
                         </v-btn>
-
-                        </v-row>
+                      </v-row>
                     </v-col>
                     <v-col cols="12" md="12">
-                    <v-row align="center" class="ma-1">
-                      <v-col cols="12" md="4">
-                        <p class="label">What is the support you need from GSIF for MIS re-engineering</p>
-                      </v-col>
-                      <v-col cols="12" md="3">
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="orgname"
-                          outlined
-                          value="project 1"
-                          required
-                          @change="sameasabove1"
-                        />
-                      </v-col>
-                
-                    </v-row>
-                    <v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            What is the support you need from GSIF for MIS
+                            re-engineering
+                          </p>
+                        </v-col>
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="orgname"
+                            outlined
+                            value="project 1"
+                            required
+                            @change="sameasabove1"
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            What is your automation requirement for excel based
+                            solutions, if any
+                          </p>
+                        </v-col>
 
-                      <v-col cols="12" md="4">
-                        <p class="label">What is your automation requirement for excel based solutions, if any</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            What are the success indicators of GSIF project
+                          </p>
+                        </v-col>
 
-                    </v-row>
-                    <v-row>
-                        <v-col cols="12" md="4">
-                        <p class="label">What are the success indicators of GSIF project</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                    </v-row>
-                    <v-row>
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            Mention the key risks for achieving the planned
+                            outcomes and impacts of the GSIF project and how do
+                            these factors affect the project
+                          </p>
+                        </v-col>
 
-                      <v-col cols="12" md="4">
-                        <p class="label">Mention the key risks for achieving the planned outcomes and impacts of the GSIF project and how do these factors affect the project</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                    </v-row>
-                    <v-row>
-                       <v-col cols="12" md="4">
-                        <p class="label">What are the things that can be done/ planned to minimize or mitigate the impact of above-mentioned risk factors</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                    </v-row>
-                    <v-row>
-                      <v-col cols="12" md="4">
-                        <p class="label">How do you plan to sustain the MIS solution designed by GSIF (licence cost,maintenance,enhancement,resources,etc)</p>
-                      </v-col>
-                      
-                      <v-col cols="12" md="3">
-                        
-                        <v-textarea
-                          rows="3"
-                          no-resize
-                           counter="300"
-                          dense
-                          hide-details="auto"
-                          v-model="legname"
-                          outlined
-                        />
-                      </v-col>
-                    </v-row>
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            What are the things that can be done/ planned to
+                            minimize or mitigate the impact of above-mentioned
+                            risk factors
+                          </p>
+                        </v-col>
+
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
+                      <v-row>
+                        <v-col cols="12" md="6">
+                          <p class="label">
+                            How do you plan to sustain the MIS solution designed
+                            by GSIF (licence
+                            cost,maintenance,enhancement,resources,etc)
+                          </p>
+                        </v-col>
+
+                        <v-col cols="12" md="6">
+                          <v-textarea
+                            rows="3"
+                            no-resize
+                            counter="300"
+                            dense
+                            hide-details="auto"
+                            v-model="legname"
+                            outlined
+                          />
+                        </v-col>
+                      </v-row>
                     </v-col>
                   </v-row>
                 </v-form>
-                <v-row align="center" justify="center" class="ml-2">
+                <v-row justify="center" class="ml-2">
                   <div class="d-flex">
                     <div class="d-inline-flex flex-wrap ma-3">
                       <div class="d-flex mt-5 mr-3">
-                        <v-btn large rounded color="primary" to="/organization-info?s=2">
+                        <v-btn
+                          large
+                          rounded
+                          color="primary"
+                          to="/organization-info?s=2"
+                        >
                           <v-icon left>mdi-arrow-left</v-icon>
                           Organization Information
                         </v-btn>
@@ -624,7 +632,12 @@
                         </v-btn>
                       </div>
                       <div class="d-flex mt-5">
-                        <v-btn large rounded color="primary" to="/nominated-personal?s=1">
+                        <v-btn
+                          large
+                          rounded
+                          color="primary"
+                          to="/nominated-personal?s=1"
+                        >
                           Nominated Personal
                           <v-icon right>mdi-arrow-right</v-icon>
                         </v-btn>
@@ -635,7 +648,6 @@
               </v-card-text>
             </v-card>
           </v-tab-item>
-
         </v-tabs>
       </v-card-text>
     </v-card>
@@ -649,7 +661,7 @@ export default {
   name: "engagement-info",
   data() {
     return {
-      projectname:'project 1',
+      projectname: "project 1",
       tab: 0,
       details: [
         {
@@ -771,7 +783,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.t{
-  color:black;
+.t {
+  color: black;
 }
 </style>

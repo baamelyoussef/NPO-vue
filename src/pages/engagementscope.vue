@@ -15,7 +15,7 @@
                 <v-card-text>
                   <v-form v-model="valid">
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -26,7 +26,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -36,7 +36,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -48,7 +48,7 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -59,7 +59,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -68,7 +68,7 @@
                           label="HO Address"
                         />
                       </v-col>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -80,7 +80,7 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-select
                           dense
                           :items="items"
@@ -92,7 +92,7 @@
                         ></v-select>
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -102,7 +102,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -166,7 +166,7 @@
                 <v-card-text>
                   <v-form v-model="valid">
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -177,7 +177,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -187,7 +187,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -199,7 +199,7 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -210,7 +210,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -219,7 +219,7 @@
                           label="HO Address"
                         />
                       </v-col>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -231,7 +231,7 @@
                       </v-col>
                     </v-row>
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-select
                           dense
                           :items="items"
@@ -243,7 +243,7 @@
                         ></v-select>
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
@@ -253,7 +253,7 @@
                         />
                       </v-col>
 
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" md="6">
                         <v-text-field
                           dense
                           hide-details="auto"
